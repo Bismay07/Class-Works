@@ -14,8 +14,8 @@
 			}
 			.s1{
 			border: 2px solid black;
-			height:100px;
-			width:100px;
+			height:200px;
+			width:200px;
 			margin:10px;
 			}
 		</style>
@@ -34,6 +34,18 @@
 					});
 				});
 			});	
+			$(document).ready(function(){
+				$("#color").click(function(){
+					$("#sh1").css("background-color","yellow");
+					$("#sh2").css("background-color","cyan");
+					$("#sh3").css("background-color","tomato");
+				});
+			});
+			$(document).ready(function(){
+  				$("#ani").click(function(){
+   					 $("#sh1").animate({left: '250px'});
+  				});
+			});
 		</script>
 	</head>
 		<body>
@@ -46,6 +58,8 @@
 				<div class="s1" id="sh2"></div>
 				<div class="s1" id="sh3"></div>
 			</div>
+			<button id="color">Colour Me</button>
+			<button id="ani">Animate Me</button>
 		</body>
 	</head>
 </html>
