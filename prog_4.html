@@ -31,21 +31,40 @@
 					$(".d").animate({opacity:'0.1'},"slow");
 					$(".d").animate({top:'0px'},"slow");
 					$(".d").animate({left:'0px'},"slow");
+					$(".d").animate({opacity:'1'},"slow");
+					$(".d").css('font-size', '50px');
+				});
+			});
+			$(document).ready(function(){
+				$("#fadein").click(function(){
+					$(".d2").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow");
+				});
+			});
+			$(document).ready(function(){
+				$("#fade").click(function(){
+					$(".d2").fadeIn("slow");
 				});
 			});
 		</script>
 		<style>
 			.d{
 			position:relative;
+			height:100px;
+			width:100px;
+			
+			background-color:cyan;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="d">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temps et netus et malesuada fames ac. Non consectetur anam at lectus urna duis convallis.</div>
-		<button id="right">Right</div>
-		<button id="left">Left</div>
-		<button id="top">Top</div>
-		<button id="bot">Bottom</div>
-		<button id="ani">Animate</div>
+		<div class="d"></div>
+		<button id="right">Right</button>
+		<button id="left">Left</button>
+		<button id="top">Top</button>
+		<button id="bot">Bottom</button>
+		<button id="ani">Animate</button>
+		<div class="d2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmtitor l.</div>
+		<button id="fadein">Fade in</button>
+		<button id="fade">Fade out</button>
 	</body>	
 </html>
