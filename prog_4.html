@@ -14,6 +14,25 @@
    					 $(".d").animate({left: '250px'});
   				});
 			});
+			$(document).ready(function(){
+				$("#top").click(function(){
+					$(".d").animate({top: '0px'});
+				});
+			});
+			$(document).ready(function(){
+				$("#bot").click(function(){
+					$(".d").animate({top: '250px'});
+				});
+			});
+			$(document).ready(function(){
+				$("#ani").click(function(){
+					$(".d").animate({top:'250px'},"slow");
+					$(".d").animate({left:'250px'},"slow");
+					$(".d").animate({opacity:'0.1'},"slow");
+					$(".d").animate({top:'0px'},"slow");
+					$(".d").animate({left:'0px'},"slow");
+				});
+			});
 		</script>
 		<style>
 			.d{
@@ -25,5 +44,8 @@
 		<div class="d">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temps et netus et malesuada fames ac. Non consectetur anam at lectus urna duis convallis.</div>
 		<button id="right">Right</div>
 		<button id="left">Left</div>
+		<button id="top">Top</div>
+		<button id="bot">Bottom</div>
+		<button id="ani">Animate</div>
 	</body>	
 </html>
