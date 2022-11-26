@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.s * { 
+			 display: block;
+			 border: 3px solid bule;
+			 color: yellow;
+			 padding: 7px;
+			 margin: 20px;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+			 $("h2").next().css({"color": "blue", "border": "3px solid blue"});
+			});
+			$(document).ready(function(){
+			 $("h3").next().css({"color": "blue", "border": "3px solid blue"});
+			});
+		</script>
+	</head>
+	<body class="s">
+		<div>parent division
+			 <p>paragraph</p>
+			 <span>span 1</span>
+			 <h2>h2</h2>
+			 <h3>h3</h3>
+			 <p>paragraph</p>
+		</div>
+	</body>
+</html>
