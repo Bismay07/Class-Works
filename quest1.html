@@ -30,8 +30,39 @@
 			display:flex;
 			justify-content: space-evenly;
 			}
+			.item{
+			
+			transition: width 2s;
+			}
 			.item:hover{
 			cursor:pointer;
+			width:300px;
+			
+			
+			}
+			#search{
+			width:100%;
+			}
+			input{
+			margin:2px auto;
+			width:90%;
+			}
+			#spc{
+			height:20px;
+			background-color:cyan;
+			width:100%;
+			}
+			.cate{
+			display:flex;
+			justify-content:space-around;
+			flex-wrap:wrap;
+			}
+			.i{
+			width:200px;
+			height:200px;
+			background-color: gray;
+			margin-top:70px;
+			border-radius:20px;
 			}
 		</style>
 		<script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script>
@@ -48,7 +79,17 @@
 				<div class="item" id="Contact">CONTACT</div>
 				<div class="item" id="Login">LOGIN</div>
 			</div><br>
-			<div><form><input type=“text” placeholder=“Search..”></form></div>
+			<div id="spc"></div>
+			<div class="cate">
+				<div class="i" id="i1">Fruits</div>
+				<div class="i" id="i2">Dry Fruits</div>
+				<div class="i" id="i3">Vegetables</div>
+				<div class="i" id="i4">Meat</div>
+				<div class="i" id="i5">Snacks</div>
+				<div class="i" id="i6">Beverages</div>
+				<div class="i" id="i7">Cutlery</div>
+				<div class="i" id="i8">Dessert</div>
+			</div>
 		</div>
 	</body>
 </html>
